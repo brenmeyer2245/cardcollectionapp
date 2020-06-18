@@ -1,0 +1,44 @@
+{
+  "name": "cardcollectionapp",
+  "version": "1.0.0",
+  "description": "A world-building wiki with a deck building UX",
+  "main": "index.js",
+  "scripts": {
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
+    "deploy": "script/deploy",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint-fix": "npm run lint -- --fix",
+    "precommit": "# lint-staged # un-comment to enable",
+    "prepare": "if [ -d .git ]; then npm-merge-driver install; fi",
+    "prettify": "prettier --write \"**/*.{js,jsx}\"",
+    "process-css": "sass main.scss public/app.css",
+    "watch-css": "node-sass --watch main.scss -o public/app.css",
+    "seed": "",
+    "start": "node server",
+    "start-dev": "NODE_ENV='development' npm run process-css & npm run build-client-watch & npm run start-server",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client",
+    "test": "NODE_ENV='test' mocha \"./server/**/*.spec.js\" \"./client/**/*.spec.js\" \"./script/**/*.spec.js\" --require @babel/polyfill --require @babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenmeyer2245/cardcollectionapp.git"
+  },
+  "keywords": [
+    "cardcollection"
+  ],
+  "author": "Brendan Dickson-Meyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brenmeyer2245/cardcollectionapp/issues"
+  },
+  "homepage": "https://github.com/brenmeyer2245/cardcollectionapp#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1"
+  }
+}
