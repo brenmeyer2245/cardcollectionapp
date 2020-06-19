@@ -14,6 +14,8 @@ const session = require('express-session');
 const passport = require('passport');
 
 //db will go here
+const firebase = require('firebase-admin');
+
 
 const PORT  = process.env.PORT || 8080;
 const app = express();
