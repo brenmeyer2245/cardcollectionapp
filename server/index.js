@@ -37,6 +37,7 @@ const initializeServer = () => {
   //along with passport and user recognition
 
   //TODO: Auth and Api Routes
+  app.use(express.static(path.join(__dirname, '..', 'public')))
 
   //root => send index.html
   app.get('*', (req, res) => {
