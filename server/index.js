@@ -13,7 +13,7 @@ const session = require('express-session');
 //user registration
 const passport = require('passport');
 
-//db will go here
+const db = require('./db')
 
 const PORT  = process.env.PORT || 8080;
 const app = express();
@@ -21,7 +21,7 @@ module.exports = app;
 
 
 
-
+if (process.env.NODE_ENV !== 'production') require('../secrets')
 const initializeServer = () => {
   //logging middleware
   app.use(morgan('dev'));
@@ -54,11 +54,12 @@ const beginListening = () => {
 
 
 const bootApp = async () => {
-  //TODO: Sync DB
+  await syncDb()
   await initializeServer()
   await beginListening()
 }
 
+const syncDb = () =>  db.sync({force: true})
 
 if (require.main === module) {
   bootApp()

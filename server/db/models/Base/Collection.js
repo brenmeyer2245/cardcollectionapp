@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const db = require('../db');
+const db = require('../../db');
 
 module.exports = db.define('Collection', {
   id : {
@@ -30,14 +30,7 @@ module.exports = db.define('Collection', {
   styleContentTemplate: {
     type: Sequelize.JSON,
   },
-  createDate: {
-    type: Sequelize.DATE,
-    defaultValue: Date.now(),
-  },
-  dateLastModified: {
-    type: Sequelize.DATE,
-    defaultValue: Date.now(),
-  },
+
   viewLevel : {
     type: Sequelize.ENUM('private', 'public'),
     defaultValue: 'private'
