@@ -10,9 +10,7 @@
 
 
   ContentTemplate.belongsTo(ContentTemplateGroup);
-  StyleTemplate.belongsTo(StyleTemplateGroup);
-
-
+  StyleTemplate.belongsTo(StyleTemplateGroup)
   User.belongsToMany(Collection, {
     through: 'CollectionOwners',
     as: 'Owner',
