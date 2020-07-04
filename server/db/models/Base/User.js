@@ -1,8 +1,8 @@
 const Sequelize = require('sequelize');
-const db = require('../db');
+const db = require('../../db');
 
 module.exports = db.define('User', {
-  id : {
+  userId : {
     type: Sequelize.INTEGER,
     allowNull: false,
     autoIncrement: true,
@@ -39,14 +39,6 @@ module.exports = db.define('User', {
     type: Sequelize.BOOLEAN,
     defaultValue: true,
     allowNull: false
-  },
-  createDate: {
-    type: Sequelize.DATE,
-    defaultValue: Date.now(),
-  },
-  dateLastModified: {
-    type: Sequelize.DATE,
-    defaultValue: Date.now(),
   }
 });
 
