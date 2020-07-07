@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+	min-height: 100vh;
+	overflow-y: scroll;
+}
+
+html,
+select {
+	background: white;
+
+	// DEFAULT FONT FOR SITE
+	font-family: 'Gotham A', 'Gotham B', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+strong {
+	font-weight: 500;
+}
