@@ -1,0 +1,35 @@
+
+
+//Variables
+@import './variables/variables-colors.scss';
+
+//Base Styling
+@import './base/reset.scss';
+@import './base/base.scss';
+
+
+
+//Vendor styling
+// @import '../../../node_modules/bootstrap/scss/functions';
+// @import '../../../node_modules/bootstrap/scss/variables';
+// @import '../../../node_modules/bootstrap/scss/mixins';
+// @import '../../../node_modules/bootstrap/scss/utilities';
+// @import '../../../node_modules/bootstrap/scss/bootstrap-grid';
+
+
+//typography
+@import './typography/type-sizes.scss';
+
+//mixes
+@import './mixes/colors.scss';
+
+
+//utils
+
+
+//Import component styles
+//@import '../components/styleIndex';
+
+
+
+
