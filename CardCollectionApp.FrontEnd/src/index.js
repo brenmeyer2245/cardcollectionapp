@@ -6,6 +6,7 @@ import {Provider} from 'react-redux';
 import store from './store';
 import {Router} from 'react-router-dom';
 import history from './history';
+import './scss/main.scss';
 
 ReactDOM.render(
   <React.StrictMode>

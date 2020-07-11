@@ -1,5 +1,4 @@
 import React from 'react';
-import './article.scss'
 import {connect} from 'react-redux'
 
 const Article = (props) => {
