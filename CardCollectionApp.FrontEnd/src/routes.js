@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Switch, Route, withRouter} from 'react-router-dom';
-import Article from './components/Article/article';
+import Article from './components/Article/articleWithData';
 
 class Routes extends Component {
   componentDidMount(){
