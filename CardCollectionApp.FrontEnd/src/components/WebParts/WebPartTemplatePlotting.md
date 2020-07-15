@@ -1,4 +1,4 @@
-# Component Templates
+# WebPart Templates
 The content for a card should be dynamic and inpendently controlled
 However, there needs to be some contract between the content stored on a card and the client
 so that client knows what and how to render.
@@ -9,7 +9,7 @@ In short, a card is really a synthesis of components and components must follow 
 The template type and its associated properties, when created, are stored in the content table with the other data.
 
 
-## Types of Components
+## Types of Webparts
 The User can choose from the following components; '
 * ### Image Map:
       Contains a main image, labels and descriptions.
@@ -47,7 +47,7 @@ The User can choose from the following components; '
       So the BaseStats would have to be passed into the SavingThrows component in order to complete the calculation for Saving Throw Stats
 
 * ### SingularItem
-      Represents an independent ttem that offers one of each specified data type and labels for each
+      Represents an independent item that offers one of each specified data type and labels for each
       Data Types: Multi-line Text, Header, Single-Line Text, Integer, Boolean
 
 * ### MediaLibrary
