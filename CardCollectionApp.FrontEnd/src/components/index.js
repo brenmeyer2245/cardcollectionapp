@@ -1,3 +1,2 @@
-import article from "./Article/article";
 
-export default article;
+export {Article, AttributeList, ImageMap} from './WebParts'

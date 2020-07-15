@@ -2,7 +2,8 @@ import React from 'react';
 
 const Article = (props) => {
   return (
-      (<article>
+      (
+      <section>
           {/* Label */}
           <h1> {props.vm.title} </h1>
 
@@ -40,7 +41,7 @@ const Article = (props) => {
               )
             })
           }
-    </article>
+    </section>
     )
   )
 };

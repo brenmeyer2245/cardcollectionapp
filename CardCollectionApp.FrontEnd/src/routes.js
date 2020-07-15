@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Switch, Route, withRouter} from 'react-router-dom';
-import Article from './components/Article/articleWithData';
+import {Article, AttributeList, ImageMap} from './components';
 
 class Routes extends Component {
   componentDidMount(){
@@ -10,6 +10,8 @@ class Routes extends Component {
     return (
      <Switch>
        <Route exact path='/article'  component={Article}/>
+       <Route exact path='/attributeList'  component={AttributeList}/>
+       <Route exact path='/imageMap'  component={ImageMap}/>
      </Switch>
     )
   }
