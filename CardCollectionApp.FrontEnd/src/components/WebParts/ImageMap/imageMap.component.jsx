@@ -79,6 +79,9 @@ export default class ImageMap extends Component {
 
 
         </figure>
+        <aside style={{float: 'right'}}>
+            List of Markers and ability to track them
+        </aside>
     </section>)
   }
 }

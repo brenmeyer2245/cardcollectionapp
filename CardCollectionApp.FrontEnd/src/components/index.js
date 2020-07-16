@@ -1,2 +1,2 @@
 
-export {Article, AttributeList, ImageMap} from './WebParts'
+export {Article, AttributeList, ImageMap, SingularItem, AttributeTable} from './WebParts'

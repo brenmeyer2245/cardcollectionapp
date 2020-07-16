@@ -1,22 +1,33 @@
 
 import React from 'react';
 
-const AttributeTable = ({vm}) => (
+const AttributeTable = ({vm}) => {
+  console.log(vm);
+  return (
   <section>
     <table>
       <thead>
+        <tr>
         {vm.attributeKeys.map((attributeKey, index) =>
-            (<th key={index}>
-              {attributeKey}
+            (<th key={`th-${index}`}>
+              <input
+                value={attributeKey}
+                disabled={!vm.editMode}
+                onChange={vm.handleChange}
+              />
             </th>)
         )}
+        </tr>
       </thead>
       <tbody>
-      {vm.attributeValues.map((attributeValueRow, index) =>
-          <tr key={index}>
-            {attributeValueRow.map((attributeValue =>
-                (<td key={index}>
-                  {attributeValue}
+      {vm.attributeValueRows.map((attributeValueRow, index) =>
+          <tr key={`tr-${index}`}>
+            {attributeValueRow.map(((attributeValue, valueIndex) => (<td key={valueIndex}>
+                <input
+                  value={attributeValue}
+                  disabled={!vm.editMode}
+                  onChange={vm.handleChange}
+                />
                 </td>)
             ))}
           </tr>
@@ -25,6 +36,6 @@ const AttributeTable = ({vm}) => (
     </table>
   </section>
 )
-
+}
 
 export default AttributeTable
