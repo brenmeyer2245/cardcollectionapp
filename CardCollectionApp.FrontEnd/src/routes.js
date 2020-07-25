@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 import {Switch, Route, withRouter} from 'react-router-dom';
-import {Article, AttributeList,AttributeTable, ImageMap, SingularItem} from './components';
+import {
+  Article,
+  AttributeList,
+  AttributeTable,
+  ImageMap,
+  SingularItem,
+  CardThumbnail,
+  CollectionCards,
+  CollectionList
+} from './components';
 
 class Routes extends Component {
   componentDidMount(){
@@ -14,6 +23,9 @@ class Routes extends Component {
        <Route exact path='/attributeTable'  component={AttributeTable}/>
        <Route exact path='/imageMap'  component={ImageMap}/>
        <Route exact path='/singularItem'  component={SingularItem}/>
+       <Route exact path='/cardThumbnail'  component={CardThumbnail}/>
+       <Route exact path='/collectionCards'  component={CollectionCards}/>
+       <Route exact path='/collectionList'  component={CollectionList}/>
      </Switch>
     )
   }

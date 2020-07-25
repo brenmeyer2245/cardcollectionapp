@@ -1,0 +1,16 @@
+.CardThumbnail {
+  @include CardThumbnail-medium;
+  &-Image{
+    padding: 10%;
+    height: 80%;
+    & img {
+      height: 100%;
+    }
+  }
+  &-Title{
+    text-align: center;
+    margin: 0 5%;
+    overflow-wrap: break-word;
+  }
+}
+

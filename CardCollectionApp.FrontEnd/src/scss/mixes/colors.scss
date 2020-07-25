@@ -1,3 +1,11 @@
 .color-white {
   color: $color-white;
 }
+
+@mixin faded {
+  filter: grayscale(90%);
+}
+
+.faded {
+  @include faded()
+}
