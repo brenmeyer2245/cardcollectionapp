@@ -17,21 +17,16 @@
 // @import '../../../node_modules/bootstrap/scss/bootstrap-grid';
 
 
+//utils
+@import './utils';
+
 //typography
 @import './typography/type-sizes.scss';
 
 //mixes
-@import './mixes/colors.scss';
-
-
-//utils
-
+@import './mixes';
 
 //Import component styles
-@import '../components/WebParts/Article/Article.scss';
-@import '../components/WebParts/AttributeList/AttributeList.scss';
-@import '../components/WebParts/ImageMap/ImageMap.scss';
-
-
+@import '../components/';
 
 

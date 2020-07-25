@@ -1,0 +1,15 @@
+@mixin CardThumbnail-medium {
+  border-radius: 5% 5%;
+  height: 15rem;
+  width: 12rem;
+  margin: 1rem;
+  border: 1px solid black;
+  overflow: hidden;
+  background: peachpuff;
+  box-shadow: 2px 2px 5px 1px #292727;
+}
+
+.CardThumbnail-medium{
+  @include CardThumbnail-medium();
+}
+

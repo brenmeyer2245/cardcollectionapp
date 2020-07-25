@@ -1,3 +1,11 @@
+@mixin type-medium {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.type-medium {
+  @include type-medium();
+}
 @mixin type-small {
   font-size: 11px;
   line-height: 1.4;
