@@ -14,7 +14,7 @@ const CollectionList = (props) => {
       (currentCollection, index) => {
         return (<a
           href="#"
-          alt-text={`Collection ${currentCollection.collectionTitle} `}
+          alt-text={`Collection ${currentCollection.collectionTitle}`}
           onClick = {() => linkToAddress(currentCollection.id, window)}
           onMouseEnter= {() => setHoveredElementIndex(index)}
           onMouseLeave= {() => setHoveredElementIndex(-1)}
@@ -29,9 +29,6 @@ const CollectionList = (props) => {
             {currentCollection.collectionTitle}
 
           </label>
-          {/* { hovered &&
-            (<h1> test </h1>)
-          } */}
         </a>
       )
     })}

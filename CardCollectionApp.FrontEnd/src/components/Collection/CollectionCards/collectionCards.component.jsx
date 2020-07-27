@@ -7,7 +7,7 @@ const CollectionCards = (props) => {
   <div className="Collection-Cards" >
     {vm.collectionCards.map(
       (currentCard, index) => (
-        <CardThumbnail vm={currentCard}/>
+        <CardThumbnail vm={currentCard} key={index}/>
       )
     )}
   </div>
