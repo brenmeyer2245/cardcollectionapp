@@ -8,7 +8,8 @@ import {
   SingularItem,
   CardThumbnail,
   CollectionCards,
-  CollectionList
+  CollectionList,
+  CardFilterBar
 } from './components';
 
 class Routes extends Component {
@@ -26,6 +27,7 @@ class Routes extends Component {
        <Route exact path='/cardThumbnail'  component={CardThumbnail}/>
        <Route exact path='/collectionCards'  component={CollectionCards}/>
        <Route exact path='/collectionList'  component={CollectionList}/>
+       <Route exact path='/filtered'  component={CardFilterBar}/>
      </Switch>
     )
   }

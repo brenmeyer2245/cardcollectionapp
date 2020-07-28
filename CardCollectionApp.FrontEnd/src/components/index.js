@@ -8,7 +8,8 @@ export {
 } from './WebParts';
 
 export {
-  CardThumbnail
+  CardThumbnail,
+  CardFilterBar
 } from './Cards';
 
 

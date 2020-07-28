@@ -1,5 +1,5 @@
 import React from 'react'
-import {CardThumbnail} from '../../Cards';
+import CardThumbnail from '../../Cards/CardThumbnail/cardThumbnail.component';
 
 const CollectionCards = (props) => {
   const {vm} = props;
