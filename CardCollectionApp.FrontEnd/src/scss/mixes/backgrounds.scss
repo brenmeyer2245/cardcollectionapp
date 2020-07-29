@@ -1,0 +1,9 @@
+@mixin greenFeltBg {
+  background-image: url('./displayBoardBg.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.greenFeltBg {
+  @include greenFeltBg();
+}

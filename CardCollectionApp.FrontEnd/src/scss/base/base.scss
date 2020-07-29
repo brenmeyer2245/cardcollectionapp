@@ -9,6 +9,15 @@ body {
 	overflow-y: scroll;
 }
 
+#root {
+	height: 100vh;
+}
+
+.mainContainer{
+	height: 100%;
+	width: 100%;
+}
+
 html,
 select {
 	background: white;
@@ -23,4 +32,9 @@ img {
 
 strong {
 	font-weight: 500;
+}
+
+footer{
+	height: 5%;
+	background: grey;
 }

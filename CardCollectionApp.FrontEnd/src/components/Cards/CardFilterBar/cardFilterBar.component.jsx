@@ -13,10 +13,10 @@ import React, {useState} from 'react'
 const CardFilterBar = (WrappedComponent, props) => {
   const [tagOptions, updateTagOptions] = useState(extractTags(props))
   return (<div
-    className="CardFilterBar"
+
     >
       {/* Tag Options */}
-      <div>
+      <div  className="CardFilterBar">
       {Object.keys(tagOptions)
         .map((tag, id) => {
          return (<button
@@ -36,6 +36,7 @@ const CardFilterBar = (WrappedComponent, props) => {
           </button>)
         })}
         <button
+          className="CardFilterBar-tagOption"
           onClick={() => resetAllTags(tagOptions, updateTagOptions)}>
           Reset
         </button>
@@ -101,3 +102,8 @@ const resetAllTags = (tagsTracker, updateTrackerFn) => {
 }
 
 export default CardFilterBar;
+
+export {extractTags,   filterCardsByTag,
+  resetAllTags,
+  toggleTagSelection
+}
