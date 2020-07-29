@@ -1,0 +1,18 @@
+.flex {
+  display: flex;
+  & .wrap{
+    flex-wrap: wrap;
+  }
+}
+
+
+#displayBoard {
+  height: 100%;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+#leftControllBar{
+  width: 15%;
+}
