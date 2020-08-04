@@ -2,20 +2,19 @@
 import React, {Fragment} from 'react'
 import Routes from './routes';
 
+import LeftControlBar from './components/Controls/LeftControlBar/LeftControlBarWithData';
+
 const App = () => {
   return (
     <Fragment>
-      <header id="navBar">
-        <nav> Nav Bar </nav>
-      </header>
       <div className="flex mainContainer">
-        <aside id="leftControllBar">
+        <nav className="LeftControlBar default">
           {/* Left Control Bar */}
-          Left Nav
-        </aside>
+          <LeftControlBar />
+        </nav>
         <main
             id="displayBoard"
-            className="greenFeltBg">
+            className="default-bg ">
           <Routes />
        </main>
       </div>
