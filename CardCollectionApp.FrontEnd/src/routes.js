@@ -14,7 +14,6 @@ import {
 
 class Routes extends Component {
   componentDidMount(){
-
   }
   render(){
     return (
@@ -26,6 +25,7 @@ class Routes extends Component {
        <Route exact path='/singularItem'  component={SingularItem}/>
        <Route exact path='/cardThumbnail'  component={CardThumbnail}/>
        <Route exact path='/collectionCards'  component={CollectionCards}/>
+       <Route exact path='/collection/:collectionId'  component={CollectionCards}/>
        <Route exact path='/collectionList'  component={CollectionList}/>
        <Route exact path='/filtered'  component={CardFilterBar}/>
      </Switch>
