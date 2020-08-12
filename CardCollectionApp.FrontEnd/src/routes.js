@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Switch, Route, withRouter} from 'react-router-dom';
+import {Switch, Route, withRouter, Redirect} from 'react-router-dom';
 import {
   Article,
   AttributeList,
@@ -9,7 +9,8 @@ import {
   CardThumbnail,
   CollectionCards,
   CollectionList,
-  CardFilterBar
+  CardFilterBar,
+  Home
 } from './components';
 
 class Routes extends Component {
@@ -18,6 +19,7 @@ class Routes extends Component {
   render(){
     return (
      <Switch>
+       <Route path='/home'  component={Home}/>
        <Route exact path='/article'  component={Article}/>
        <Route exact path='/attributeList'  component={AttributeList}/>
        <Route exact path='/attributeTable'  component={AttributeTable}/>

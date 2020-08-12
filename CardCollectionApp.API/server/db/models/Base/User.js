@@ -14,7 +14,7 @@ module.exports = db.define('User', {
     defaultValue: "Gary",
 
   },
-  LastName: {
+  lastName: {
     type: Sequelize.STRING,
     allowNull: null,
     defaultValue: "Gygax",

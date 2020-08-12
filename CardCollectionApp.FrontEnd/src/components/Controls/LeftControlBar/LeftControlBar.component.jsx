@@ -70,9 +70,10 @@ export default ({vm}) => {
             <ul>
               {vm.myCollections.map((collection, id) => {
                 return(
-                  <li>
+                  <li
+                    key={id}
+                  >
                     <Link
-                      key={id}
                       className={
                         classes(["LeftControlBar-CollectionLink"])
                       }
@@ -91,9 +92,10 @@ export default ({vm}) => {
             <ul>
               {vm.followedCollections.map((collection, id) => {
                 return(
-                  <li>
+                  <li
+                    key={id}
+                  >
                     <Link
-                      key={id}
                       className={
                         classes(["LeftControlBar-CollectionLink", vm.styleTemplate.leftControlBar])
                       }

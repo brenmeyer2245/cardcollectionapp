@@ -17,3 +17,8 @@ export {
   CollectionCards,
   CollectionList
  } from './Collection';
+
+
+ export {
+   Home
+ } from './Pages'
