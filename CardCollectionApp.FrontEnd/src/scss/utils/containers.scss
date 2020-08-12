@@ -7,12 +7,12 @@
 
 
 #displayBoard {
-  height: 100%;
+  margin-left: 250px;
   width: 85%;
   display: flex;
   justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-#leftControlBar{
-  width: 8rem;
-}

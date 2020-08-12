@@ -18,9 +18,6 @@ const App = () => {
           <Routes />
        </main>
       </div>
-      <footer>
-        Footer
-      </footer>
     </Fragment>
   )
 }
