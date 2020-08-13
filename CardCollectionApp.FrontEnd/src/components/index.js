@@ -9,7 +9,8 @@ export {
 
 export {
   CardThumbnail,
-  CardFilterBar
+  CardFilterBar,
+  CardFull
 } from './Cards';
 
 

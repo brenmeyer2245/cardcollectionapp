@@ -1,4 +1,7 @@
+import {WebPartTypeConstants} from '../../../utilities/constants';
+
 const SingularItemData = {
+  webPartType: WebPartTypeConstants.SINGULAR_ITEM,
   header: {
     label: 'Header Label',
     value: 'Header Value'

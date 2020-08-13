@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AttributeList = ({vm}) => (
-  <section>
+  <div>
     <h4> {vm.title} </h4>
     <ul>
     {vm.attributes
@@ -17,7 +17,7 @@ const AttributeList = ({vm}) => (
                 })
     }
     </ul>
-  </section>
+  </div>
 )
 
 

@@ -33,7 +33,7 @@ export default class ImageMap extends Component {
 
   }
   render(){
-    return (<section>
+    return (<div>
 
         <figure
         style={{marginTop: '100px',
@@ -51,7 +51,7 @@ export default class ImageMap extends Component {
 
             style={{
               position: "absolute",
-              zIndex: -1,
+              zIndex:0,
               height: "inherit",
               width: "inherit"
             }}
@@ -82,7 +82,7 @@ export default class ImageMap extends Component {
         <aside style={{float: 'right'}}>
             List of Markers and ability to track them
         </aside>
-    </section>)
+    </div>)
   }
 }
 

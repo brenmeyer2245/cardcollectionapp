@@ -3,7 +3,7 @@ import React from 'react';
 const Article = (props) => {
   return (
       (
-      <section>
+      <div>
           {/* Label */}
           <h1> {props.vm.title} </h1>
 
@@ -41,14 +41,14 @@ const Article = (props) => {
               )
             })
           }
-    </section>
+    </div>
     )
   )
 };
 
 function determineFloatByIndex(index){
-  if (index % 2) return 'float-left';
-  return 'float-right';
+  if (index % 2) return 'position-left';
+  return 'position-right';
 }
 
 

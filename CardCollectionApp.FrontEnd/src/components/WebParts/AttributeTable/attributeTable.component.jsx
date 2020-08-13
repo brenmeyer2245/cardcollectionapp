@@ -2,9 +2,8 @@
 import React from 'react';
 
 const AttributeTable = ({vm}) => {
-  console.log(vm);
   return (
-  <section>
+  <div class="AttributeTable">
     <table>
       <thead>
         <tr>
@@ -34,7 +33,7 @@ const AttributeTable = ({vm}) => {
         )}
       </tbody>
     </table>
-  </section>
+  </div>
 )
 }
 

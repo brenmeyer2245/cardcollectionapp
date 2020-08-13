@@ -1,9 +1,8 @@
 import React from 'react';
 
 const SingularItem = (props) => {
-  console.log(props);
    return  (
-      <section>
+      <div>
          {/* Header  */}
          <div>
           <input
@@ -79,7 +78,7 @@ const SingularItem = (props) => {
         </div>
 
 
-      </section>
+      </div>
   )
 }
 

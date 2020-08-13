@@ -10,6 +10,7 @@ import {
   CollectionCards,
   CollectionList,
   CardFilterBar,
+  CardFull,
   Home
 } from './components';
 
@@ -30,6 +31,7 @@ class Routes extends Component {
        <Route exact path='/collection/:collectionId'  component={CollectionCards}/>
        <Route exact path='/collectionList'  component={CollectionList}/>
        <Route exact path='/filtered'  component={CardFilterBar}/>
+       <Route exact path='/fullCard'  component={CardFull}/>
      </Switch>
     )
   }
