@@ -1,4 +1,7 @@
+import {WebPartTypeConstants} from '../../../utilities/constants';
+
 const AttributeListData = {
+  webPartType: WebPartTypeConstants.ATTRIBUTE_LIST,
   title: 'Attribute List Title',
   attributes : [
     {
