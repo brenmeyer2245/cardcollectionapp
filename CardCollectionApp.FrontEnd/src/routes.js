@@ -11,7 +11,9 @@ import {
   CollectionList,
   CardFilterBar,
   CardFull,
-  Home
+  Home,
+  GroupList,
+  CollectionPage
 } from './components';
 
 class Routes extends Component {
@@ -28,10 +30,11 @@ class Routes extends Component {
        <Route exact path='/singularItem'  component={SingularItem}/>
        <Route exact path='/cardThumbnail'  component={CardThumbnail}/>
        <Route exact path='/collectionCards'  component={CollectionCards}/>
-       <Route exact path='/collection/:collectionId'  component={CollectionCards}/>
+       <Route path='/collections/:collectionId'  component={CollectionPage}/>
        <Route exact path='/collectionList'  component={CollectionList}/>
        <Route exact path='/filtered'  component={CardFilterBar}/>
        <Route exact path='/fullCard'  component={CardFull}/>
+       <Route exact path='/groupList'  component={GroupList}/>
      </Switch>
     )
   }

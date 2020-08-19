@@ -56,6 +56,16 @@ export default ({vm}) => {
                   <span> Create Card</span>
                 </Link>
             </li>
+            <li
+              className={classes(["LeftControlBar-Link"])}
+            >
+                <Link
+                  to={"/create/grouping"}
+                  >
+                  <img src="./staticpics/add.png"/>
+                  <span> Create Grouping</span>
+                </Link>
+            </li>
           </ul>
         </section>
         <hr/>

@@ -21,5 +21,10 @@ export {
 
 
  export {
-   Home
- } from './Pages'
+   Home,
+   CollectionPage
+ } from './Pages';
+
+ export {
+   GroupList
+ } from './CardGroups';
