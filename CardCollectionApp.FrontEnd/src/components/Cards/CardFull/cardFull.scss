@@ -8,6 +8,7 @@
   }
   &-Section{
     width: 100%;
+    min-height: 33%;
     padding: 2%;
     overflow-x: scroll;
     &::after{

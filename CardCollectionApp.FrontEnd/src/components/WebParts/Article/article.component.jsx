@@ -3,9 +3,9 @@ import React from 'react';
 const Article = (props) => {
   return (
       (
-      <div>
+      <div className="WebPart-Container">
           {/* Label */}
-          <h1> {props.vm.title} </h1>
+          <h1 className="WebPart-Title"> {props.vm.title} </h1>
 
           {/* Text is broken down into an array of chunks */}
           {props.vm.contentText.map(
