@@ -23,6 +23,22 @@ describe('Collection Page', () => {
               .text()
             ).to.equal(CollectionData.collectionTitle)
     })
+    it('renders the collection description', () => {
+        expect(
+            collection
+              .find('.Collection-description')
+              .at(0)
+              .text()
+            ).to.equal(CollectionData.collectionDescription)
+    })
+    it('renders the collection header', () => {
+      expect(
+        collection
+          .find('.Collection-header')
+          .at(0)
+          .prop('style')
+        ).to.have.property('backgroundImage', CollectionData.collectionHeaderImage);
+    })
     it('renders the number of cards in the collection', () => {
         expect(collection.contains(CardThumbnail)).to.equal(true)
         expect(

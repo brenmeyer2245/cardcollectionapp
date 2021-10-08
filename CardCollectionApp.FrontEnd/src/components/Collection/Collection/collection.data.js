@@ -3,6 +3,7 @@ export default {
   collectionTitle: "Test Collection",
   collectionThumbnail:
     "https://c7.uihere.com/files/533/644/39/shanghai-skyline-cityscape-night-water-thumb.jpg",
+  collectionHeaderImage:"https://i.scdn.co/image/7a21999da5e80714ec222c493dae1c946f1bf36c",
   collectionDescription: "This is a collection of things. Test Things",
   collectionCards: [{
         thumbnailTitle: {
