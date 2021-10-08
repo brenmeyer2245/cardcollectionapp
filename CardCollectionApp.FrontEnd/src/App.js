@@ -14,7 +14,7 @@ const App = () => {
         </nav>
         <main
             id="displayBoard"
-            className="default-bg ">
+            className="greenFeltBg">
           <Routes />
        </main>
       </div>
