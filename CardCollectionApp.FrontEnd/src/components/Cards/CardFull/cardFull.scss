@@ -1,15 +1,33 @@
 .CardFull {
+  &-Title{
+    text-align: center;
+    margin: 2% 2% 0px 2%;
+    font-size: 3em;
+    &::after{
+      content: '';
+      display: block;
+      background-color: #969696;
+      height: 1px;
+      width: 100%;
+      margin: 1rem 0;
+      opacity: .5;
+    }
+  }
   &-Container{
     border: 1px solid white;
     margin-top: 2%;
+    margin-bottom: 2%;
     color: white;
-    width: 100%;
+    width: 90%;
     overflow-y: scroll;
+    background-color: black;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 3px 3px black;
   }
   &-Section{
     width: 100%;
     min-height: 33%;
-    padding: 2%;
+    padding: 0px 2%;
     overflow-x: scroll;
     &::after{
       content: '';

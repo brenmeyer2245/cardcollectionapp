@@ -30,7 +30,7 @@ const resolveWebPart = (webPartData) => {
 const CardFull = ({vm}) => {
   return (
   <div className="CardFull-Container">
-
+    <h1 className="CardFull-Title">{vm.cardTitle}</h1> 
     {/* Iterate through the props WebParts */}
     {vm.cardSections.map(
       (webPartData, index) => {

@@ -1,12 +1,13 @@
 import {WebPartTypeConstants} from '../../../utilities/constants';
 
 const CardFullData = {
+  cardTitle: "Card Title",
   cardSections: [
     {
       webPartType: WebPartTypeConstants.ARTICLE,
       title: 'article title',
       contentText: [
-        "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth"
+        "AND I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth"
         ,"the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
         ,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat fermentum rhoncus. Suspendisse eleifend ante in fermentum vestibulum. Phasellus sollicitudin pulvinar blandit. Nulla pharetra, arcu at tincidunt iaculis, justo turpis pulvinar ligula, quis aliquam elit tellus eu ipsum. Nullam ultricies nisl eu ex egestas, id dictum lectus condimentum. Morbi porta ut nulla ac scelerisque. Vestibulum vel odio est. Aenean viverra ipsum a neque efficitur, et convallis dui euismod. Nullam accumsan tincidunt metus sed accumsan. Nunc eget nibh posuere, congue lectus nec, varius lacus. Suspendisse tempor turpis sit amet nulla gravida, in rhoncus ante elementum. Donec pretium ac urna non tincidunt. Vestibulum porta ligula vel justo pretium vehicula. Pellentesque at convallis sem."
         ,"Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ut sodales diam, sed blandit metus. Phasellus id metus sagittis, pharetra nisl sed, tincidunt est. Vivamus in rhoncus tortor. Donec volutpat velit non convallis bibendum. Suspendisse eu tristique ex. Vestibulum condimentum convallis porttitor. Vestibulum porttitor, augue in posuere facilisis, dolor libero pulvinar est, a dictum purus lectus non odio. Pellentesque massa dui, vulputate in orci ut, cursus mattis massa. Suspendisse id venenatis lectus. Nulla venenatis ut tellus id molestie."
@@ -26,22 +27,22 @@ const CardFullData = {
         }
       ]
     }
-    // {
-    //   webPartType: WebPartTypeConstants.ATTRIBUTE_LIST,
-    //   title: 'Attribute List Title',
-    //   attributes : [
-    //     {
-    //       key: 'Role',
-    //       value: 'Developer',
-    //       valueDataType: "text"
-    //       },
-    //     {
-    //       key: 'Name',
-    //       value: 'Brendan',
-    //       valueDataType: "text"
-    //     }
-    //   ]
-    // }
+    ,{
+      webPartType: WebPartTypeConstants.ATTRIBUTE_LIST,
+      title: 'Attribute List Title',
+      attributes : [
+        {
+          key: 'Role',
+          value: 'Developer',
+          valueDataType: "text"
+          },
+        {
+          key: 'Name',
+          value: 'Brendan',
+          valueDataType: "text"
+        }
+      ]
+    }
    
   ]
 }
