@@ -6,3 +6,11 @@ import Home from './home.component';
 
 const adapter = new Adapter();
 enzyme.configure({adapter});
+
+describe('Home Page', () => {
+    let homePage; 
+    beforeEach(() =>{
+        homePage = <Home />
+    })
+    it('will have a test', () => {})
+})
